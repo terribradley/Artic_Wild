@@ -16,14 +16,9 @@ header  {
     color: white;
     font-size: 1em;
     line-height: 20px;
-    text-align: center;
     &:nth-of-type(2) {
       font-size: 3em;
     }
-  }
-  h4 {
-    color: white;
-    font-family: 'freight-big-pro', serif;
   }
   @media screen and (min-width: 768px) {
     h1 {
@@ -49,6 +44,16 @@ header  {
   width: 250px;
   margin: 50px auto;
 }
+#hero-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
 #gallery {
   display: flex;
   flex-direction: column;
@@ -66,6 +71,7 @@ header  {
   height: 250px;
   margin: 3%;
   position: relative;
+  border-radius: 2px;
   &:hover .icon {
     transform: scale(1.4);
   }
@@ -109,6 +115,7 @@ header  {
     margin: 0;
     width: 49.4%;
     height: 35vh;
+    border-radius: none;
     &:nth-child(1),
     &:nth-child(6) {
       width: 100%;
