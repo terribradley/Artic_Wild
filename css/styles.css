@@ -549,7 +549,7 @@ header {
   @media screen and (min-width: 960px) {
     #mid-nav {
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       #mid-nav ul {
         display: flex;
         justify-content: flex-end;
