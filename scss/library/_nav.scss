@@ -1,20 +1,29 @@
 #header-nav {
   display: flex;
-  height: 150px;
+  height: 80px;
   align-items: flex-end;
   justify-content: space-between;
   img {
-    margin-left: 8%
+    margin-left: 8%;
   }
   ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    li {
-      color: white;
-      margin-right: 5%;
-      font-family: 'Fjalla One', sans-serif;
-      font-size: 1.1em;
+    display: none;
+  }
+  @media screen and (min-width: 960px) {
+    height: 150px;
+    img {
+      margin-left: 2%;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        color: white;
+        margin-right: 5%;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1.1em;
+      }
     }
   }
 }

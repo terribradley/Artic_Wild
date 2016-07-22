@@ -15,7 +15,7 @@ header {
     font-family: 'freight-big-pro', serif;
     color: white;
     font-size: 1em;
-    line-height: 20px; }
+    margin-bottom: 0; }
     header h1:nth-of-type(2) {
       font-size: 3em; }
   @media screen and (min-width: 768px) {
@@ -33,14 +33,24 @@ header {
 
 .text-underline {
   background-color: white;
-  height: 6px;
+  height: 5px;
   width: 250px;
   margin: 50px auto; }
+  @media screen and (min-width: 768px) {
+    .text-underline {
+      margin: 80px auto; } }
 
 #hero-intro {
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  align-items: center;
+  line-height: .5em; }
+  #hero-intro img {
+    width: 95px; }
+  @media screen and (min-width: 768px) {
+    #hero-intro {
+      margin-top: 10%; } }
 
 #gallery {
   display: flex;
@@ -112,20 +122,27 @@ header {
 
 #header-nav {
   display: flex;
-  height: 150px;
+  height: 80px;
   align-items: flex-end;
   justify-content: space-between; }
   #header-nav img {
     margin-left: 8%; }
   #header-nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    #header-nav ul li {
-      color: white;
-      margin-right: 5%;
-      font-family: 'Fjalla One', sans-serif;
-      font-size: 1.1em; }
+    display: none; }
+  @media screen and (min-width: 960px) {
+    #header-nav {
+      height: 150px; }
+      #header-nav img {
+        margin-left: 2%; }
+      #header-nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; }
+        #header-nav ul li {
+          color: white;
+          margin-right: 5%;
+          font-family: 'Fjalla One', sans-serif;
+          font-size: 1.1em; } }
 
 .image:nth-child(1) {
   background-image: url("../img/1.jpg");
