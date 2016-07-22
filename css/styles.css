@@ -368,11 +368,9 @@ html {
   background-color: #d1d1c9; }
 
 .page-container {
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s;
   position: relative; }
 
 header {
@@ -541,7 +539,40 @@ header {
           color: white;
           margin-right: 5%;
           font-family: 'Fjalla One', sans-serif;
-          font-size: 1.1em; } }
+          font-size: 1.1em;
+          list-style: none; } }
+
+#mid-nav {
+  display: none;
+  height: 150px;
+  background: #333; }
+  @media screen and (min-width: 960px) {
+    #mid-nav {
+      display: flex;
+      justify-content: space-between; }
+      #mid-nav ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 55%;
+        border-bottom: 2px solid black; }
+        #mid-nav ul li {
+          height: 25px;
+          color: rgba(255, 255, 255, 0.5);
+          list-style: none;
+          padding: 10px 15px 10px 15px;
+          font-size: .9em;
+          font-family: 'Opensans', sans-serif; }
+          #mid-nav ul li:nth-child(1) {
+            color: white; }
+          #mid-nav ul li:nth-child(5) {
+            color: #dc7725;
+            border-left: 1px solid rgba(255, 255, 255, 0.5); }
+          #mid-nav ul li img {
+            width: 15%; }
+        #mid-nav ul #search {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 1em; } }
 
 .toggle {
   text-decoration: none;
@@ -563,11 +594,12 @@ header {
   position: absolute;
   top: 0px;
   right: -250px;
-  bottom: 0px;
+  bottom: 2px;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   width: 230px;
+  height: 175%;
   padding: 1%;
   color: white;
   background: #333; }
