@@ -11,31 +11,30 @@ header {
 #gallery {
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%; }
+  height: auto;
+  width: 100%; }
   @media screen and (min-width: 768px) {
     #gallery {
-      justify-content: space-between; } }
+      flex-direction: row; } }
 
 .image {
   border: 2px solid tomato;
-  width: 100%;
   height: 35vh;
   margin: 2%; }
   @media screen and (min-width: 768px) {
-    .image .one,
-    .image .six {
-      background-color: green;
+    .image {
       margin: 0;
-      width: 33%;
-      flex-grow: 2; }
-    .image .two,
-    .image .three,
-    .image .four,
-    .image .five {
+      width: 49.4%; }
+      .image:nth-child(1), .image:nth-child(6) {
+        width: 100%; } }
+  @media screen and (min-width: 965px) {
+    .image {
       margin: 0;
-      flex-grow: 1; } }
+      width: 24.4%;
+      height: 50vh; }
+      .image:nth-child(1), .image:nth-child(6) {
+        width: 49.1%; } }
 
 /*# sourceMappingURL=styles.css.map */
