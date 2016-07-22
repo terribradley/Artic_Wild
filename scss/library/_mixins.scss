@@ -1,0 +1,8 @@
+
+@for $i from 1 through 6 {
+  .image:nth-child(#{$i}) {
+    background-image: url("../img/#{$i}.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}

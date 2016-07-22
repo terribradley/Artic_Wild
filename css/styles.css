@@ -37,4 +37,34 @@ header {
       .image:nth-child(1), .image:nth-child(6) {
         width: 49.1%; } }
 
+.image:nth-child(1) {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.image:nth-child(2) {
+  background-image: url("../img/2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.image:nth-child(3) {
+  background-image: url("../img/3.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.image:nth-child(4) {
+  background-image: url("../img/4.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.image:nth-child(5) {
+  background-image: url("../img/5.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.image:nth-child(6) {
+  background-image: url("../img/6.jpg");
+  background-size: cover;
+  background-position: center; }
+
 /*# sourceMappingURL=styles.css.map */
